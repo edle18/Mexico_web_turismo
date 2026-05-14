@@ -1,8 +1,8 @@
 const slider = document.getElementById("slider");
 
 let imagenes = [
-    "images/Portada1.jpg",
-    "images/Portada2.jpg",
+    "images/portada1.jpg",
+    "images/portada2.jpg",
     "images/sitio1.jpg",
     "images/sitio2.jpg",
     "images/cultura1.jpg",
@@ -11,7 +11,7 @@ let imagenes = [
 
 const pagina = window.location.pathname;
 
-if (pagina.includes("IndexGastro.html")) {
+if (pagina.includes("indexgastro.html")) {
     imagenes = [
         "images/comidaprin.jpg",
         "images/comida0.jpg",
@@ -22,7 +22,7 @@ if (pagina.includes("IndexGastro.html")) {
     ];
 }
 
-if (pagina.includes("IndexCultura.html")) {
+if (pagina.includes("indexcultura.html")) {
     imagenes = [
         "images/culturaprin.jpg",
         "images/cultura1.jpg",
@@ -33,7 +33,7 @@ if (pagina.includes("IndexCultura.html")) {
     ];
 }
 
-if (pagina.includes("Indexsitio.html")) {
+if (pagina.includes("indexsitio.html")) {
     imagenes = [
         "images/sitioprin.jpg",
         "images/sitio1.jpg",
@@ -74,7 +74,7 @@ const idioma = document.getElementById("idioma");
 
 function cambiarMensaje(idiomaSeleccionado){
 
-    if (window.location.href.includes("IndexGastro.html")) {
+    if (window.location.href.includes("indexgastro.html")) {
 
         if (idiomaSeleccionado === "es") mensaje.textContent = "Bienvenido a la gastronomía mexicana";
         if (idiomaSeleccionado === "en") mensaje.textContent = "Welcome to Mexican gastronomy";
@@ -82,7 +82,7 @@ function cambiarMensaje(idiomaSeleccionado){
 
     }
 
-    else if (window.location.href.includes("IndexCultura.html")) {
+    else if (window.location.href.includes("indexcultura.html")) {
 
         if (idiomaSeleccionado === "es") mensaje.textContent = "Bienvenido a la cultura mexicana";
         if (idiomaSeleccionado === "en") mensaje.textContent = "Welcome to Mexican culture";
@@ -90,7 +90,7 @@ function cambiarMensaje(idiomaSeleccionado){
 
     }
 
-    else if (window.location.href.includes("Indexsitio.html")) {
+    else if (window.location.href.includes("indexsitio.html")) {
 
         if (idiomaSeleccionado === "es") mensaje.textContent = "Bienvenido a los sitios turísticos de México";
         if (idiomaSeleccionado === "en") mensaje.textContent = "Welcome to tourist sites of Mexico";
